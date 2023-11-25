@@ -1,0 +1,1 @@
+DJANGO_DEBUG=True python ./manage.py cvat_importer

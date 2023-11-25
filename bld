@@ -1,0 +1,6 @@
+#!/bin/bash
+set -e
+CVAT_DEBUG_ENABLED=yes CVAT_VERSION=v2.7.6 docker buildx build --tag=cvat/server:devx -f Dockerfile .
+CVAT_DEBUG_ENABLED=yes CVAT_VERSION=v2.7.6 docker buildx build --tag=cvat/ui:devx -f Dockerfile.ui .
+#CVAT_DEBUG_ENABLED=yes CVAT_VERSION=v2.7.6 docker buildx build --tag=cvat/server:devx -f Dockerfile.ci -
+
